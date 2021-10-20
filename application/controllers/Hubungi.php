@@ -15,7 +15,7 @@ class Hubungi extends CI_Controller {
 			$vals = array(
 	            'img_path'	 => './captcha/',
 	            'img_url'	 => base_url().'captcha/',
-	            'font_path' => 'asset/Tahoma.ttf',
+	            'font_path' => '/asset/Tahoma.ttf',
 	            'font_size'     => 16,
 	            'img_width'	 => '100',
 	            'img_height' => 30,
