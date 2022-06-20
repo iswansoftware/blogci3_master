@@ -24,6 +24,7 @@
             </div><!-- /.col -->
             </a>
 
+            <!-- dimatikan
             <a style='color:#000' href='<?php echo base_url(); ?>administrator/agenda'>
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="info-box">
@@ -32,10 +33,27 @@
                   <span class="info-box-text">Agenda</span>
                   <?php $jmlc = $this->model_agenda->agenda()->num_rows(); ?>
                   <span class="info-box-number"><?php echo $jmlc; ?></span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-            </div><!-- /.col -->
+                </div>
+              </div>
+            </div>
             </a>
+          -->
+
+            
+            <a style='color:#000' href='<?php echo base_url(); ?>administrator/komentar'>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Komentar</span>
+                  <?php $jmlc = $this->model_berita->komentar()->num_rows(); ?>
+                  <span class="info-box-number"><?php echo $jmlc; ?></span>
+                </div>
+              </div>
+            </div>
+            </a>
+          
+
 
             <a style='color:#000' href='<?php echo base_url(); ?>administrator/manajemenuser'>
             <div class="col-md-3 col-sm-6 col-xs-12">

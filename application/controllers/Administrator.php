@@ -4,7 +4,11 @@ class Administrator extends CI_Controller {
 	function index(){
 		if (isset($_POST['submit'])){
 			$username = $this->input->post('a');
-			$password = md5($this->input->post('b'));
+		
+			//$password = md5($this->input->post('b'));
+			$password = $this->input->post('b');		//untuk melihat password
+
+
 			$cek = $this->model_users->cek_login($username,$password);
 		    $row = $cek->row_array();
 		    $total = $cek->num_rows();

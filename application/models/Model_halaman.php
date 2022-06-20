@@ -5,7 +5,7 @@ class Model_halaman extends CI_model{
     }
 
     function halamanstatis_tambah(){
-            $config['upload_path'] = 'asset/foto_banner/';
+            $config['upload_path'] = 'asset/foto_statis/';
             $config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
             $config['max_size'] = '3000'; // kb
             $this->load->library('upload', $config);
@@ -29,7 +29,7 @@ class Model_halaman extends CI_model{
     }
 
     function halamanstatis_update(){
-        $config['upload_path'] = 'asset/foto_banner/';
+        $config['upload_path'] = 'asset/foto_statis';
         $config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
         $config['max_size'] = '3000'; // kb
         $this->load->library('upload', $config);

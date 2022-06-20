@@ -1,1 +1,1 @@
-<strong>Copyright &copy; <?php echo date('Y'); ?> <a target='_BLANK' href="https://members.phpmu.com"> CMS Lokomedia Codeigniter</a>.</strong> All rights reserved.
+<strong>Copyright &copy; <?php echo date('Y'); ?> <a target='_BLANK' href="https://isoft-hosting.web.id">Isoft Hosting</a>.</strong> All rights reserved.
