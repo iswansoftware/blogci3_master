@@ -52,3 +52,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'utama';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+//<!--ui-->
+$routes->get('about', 'utama::about');
+$routes->get('contact', 'utama::contact');
+$routes->get('feature', 'utama::feature');
+$routes->get('project', 'utama::project');
+$routes->get('service', 'utama::service');
+$routes->get('team', 'utama::team');
+$routes->get('testimonial', 'utama::testimonial');
