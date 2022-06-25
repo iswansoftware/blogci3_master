@@ -12,10 +12,10 @@
         <div class="row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Career</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Terms</a></li>
-                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Privacy</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="">Home</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="<?php echo base_url(); ?>index.php/about">About</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="<?php echo base_url(); ?>index.php/service">Service</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="<?php echo base_url(); ?>index.php/contact">Contact</a></li>
                 </ol>
             </div>
             <div class="col-lg-6 px-5 text-end">

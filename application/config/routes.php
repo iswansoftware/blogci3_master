@@ -54,10 +54,11 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 //<!--ui-->
-$routes->get('about', 'utama::about');
-$routes->get('contact', 'utama::contact');
-$routes->get('feature', 'utama::feature');
-$routes->get('project', 'utama::project');
-$routes->get('service', 'utama::service');
-$routes->get('team', 'utama::team');
-$routes->get('testimonial', 'utama::testimonial');
+$route['about'] = 'utama/about';
+$route['contact'] = 'utama/contact';
+$route['feature'] = 'utama/feature';
+$route['project'] = 'utama/project';
+$route['service'] = 'utama/service';
+$route['team'] = 'utama/team';
+$route['testimonial'] = 'utama/testimonial';
+$route['project'] = 'utama/project';

@@ -15,7 +15,7 @@ class Utama extends CI_Controller
 	{
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
-		$this->load->view(template() . '/_slider');
+		//$this->load->view(template() . '/_slider');
 		$this->load->view(template() . '/_about');
 		$this->load->view(template() . '/_footer');
 	}
@@ -24,8 +24,8 @@ class Utama extends CI_Controller
 	{
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
-		$this->load->view(template() . '/_slider');
-		$this->load->view(template() . '/contact');
+		//$this->load->view(template() . '/_slider');
+		$this->load->view(template() . '/_contact');
 		$this->load->view(template() . '/_footer');
 	}
 
@@ -33,7 +33,7 @@ class Utama extends CI_Controller
 	{
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
-		$this->load->view(template() . '/_slider');
+		//$this->load->view(template() . '/_slider');
 		$this->load->view(template() . '/_feature');
 		$this->load->view(template() . '/_footer');
 	}
@@ -42,7 +42,7 @@ class Utama extends CI_Controller
 	{
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
-		$this->load->view(template() . '/_slider');
+		//$this->load->view(template() . '/_slider');
 		$this->load->view(template() . '/_project');
 		$this->load->view(template() . '/_footer');
 	}
@@ -51,7 +51,7 @@ class Utama extends CI_Controller
 	{
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
-		$this->load->view(template() . '/_slider');
+		//$this->load->view(template() . '/_slider');
 		$this->load->view(template() . '/_service');
 		$this->load->view(template() . '/_footer');
 	}
@@ -60,7 +60,7 @@ class Utama extends CI_Controller
 	{
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
-		$this->load->view(template() . '/_slider');
+		//$this->load->view(template() . '/_slider');
 		$this->load->view(template() . '/_team');
 		$this->load->view(template() . '/_footer');
 	}
@@ -69,7 +69,7 @@ class Utama extends CI_Controller
 	{
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
-		$this->load->view(template() . '/_slider');
+		//$this->load->view(template() . '/_slider');
 		$this->load->view(template() . '/_testimonial');
 		$this->load->view(template() . '/_footer');
 	}
