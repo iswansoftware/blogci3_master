@@ -42,17 +42,16 @@
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="img-border">
-                    <img class="img-fluid" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/new/img/about.jpg" alt="">
+                    <img class="img-fluid" src="<?php echo base_url(); ?>asset/foto_statis/<?php echo $gambar ?>" alt="">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="h-100">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">['judul']</h6>
-                    <h1 class="display-6 mb-4">#1 Digital Solution With <span class="text-primary">10 Years</span> Of Experience</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                    <h6 class="section-title bg-white text-start text-primary pe-3 " maxlength="10"><?php echo $judul ?></h6>
+                    <!-- <h1 class="display-6 mb-4">#1 Digital Solution With <span class="text-primary">10 Years</span> Of Experience</h1> -->
+                    <?php echo $isi_halaman ?>
                     <div class="d-flex align-items-center mb-4 pb-2">
-                        <img class="flex-shrink-0 rounded-circle" src="img/team-1.jpg" alt="" style="width: 50px; height: 50px;">
+                        <!-- <img class="flex-shrink-0 rounded-circle" src="img/team-1.jpg" alt="" style="width: 50px; height: 50px;"> -->
                         <div class="ps-4">
                             <h6>Jhon Doe</h6>
                             <small>SEO & Founder</small>

@@ -5,8 +5,11 @@ class Utama extends CI_Controller
 	public function index()
 	{
 		$this->load->model('Model_utama');
-		$xdata= $this->Model_utama->landingpage_about();
-		$data=[]
+		$dat = $this->Model_utama->landingpage_about();
+		$row = $dat->row();
+		$data['judul'] = $row->judul;
+		$data['isi_halaman'] = $row->isi_halaman;
+		$data['gambar'] = $row->gambar;
 
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
@@ -14,7 +17,7 @@ class Utama extends CI_Controller
 		$this->load->view(template() . '/_slider_test');
 		$this->load->view(template() . '/_landingpage', $data);
 		$this->load->view(template() . '/_footer');
-		var_dump($data);
+		// var_dump($data);
 	}
 
 	public function about()
