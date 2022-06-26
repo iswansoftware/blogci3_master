@@ -5,6 +5,7 @@
             <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
                 <img class="img-fluid" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/new/img/carousel-1.jpg" alt="Image">
             </button>
+
             <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2">
                 <img class="img-fluid" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/new/img/carousel-2.jpg" alt="Image">
             </button>
@@ -22,6 +23,7 @@
                     </div>
                 </div>
             </div>
+            }
             <div class="carousel-item">
                 <img class="w-100" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/new/img/carousel-2.jpg" alt="Image">
                 <div class="carousel-caption">

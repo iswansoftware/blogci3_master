@@ -6,8 +6,9 @@ class Utama extends CI_Controller
 	{
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
-		$this->load->view(template() . '/_slider');
-		$this->load->view(template() . '/_landingpage');
+		//$this->load->view(template() . '/_slider');
+		$this->load->view(template() . '/_slider_test');
+		$this->load->view(template() . '/_landingpage', $data);
 		$this->load->view(template() . '/_footer');
 	}
 
@@ -15,7 +16,7 @@ class Utama extends CI_Controller
 	{
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
-		//$this->load->view(template() . '/_slider');
+		$this->load->view(template() . '/_slider');
 		$this->load->view(template() . '/_about');
 		$this->load->view(template() . '/_footer');
 	}
