@@ -13,9 +13,11 @@ class Utama extends CI_Controller
 		$data['isi_halaman_about'] = $row_function_about->isi_halaman;
 		$data['gambar_about'] = $row_function_about->gambar;
 
+		$data['function_gallery'] = $this->Model_utama->landingpage_gallery();
+
 		//data gallery
-		$function_gallery = $this->Model_utama->landingpage_gallery();
-		$row_function_gallery = $function_gallery->row();
+		//$function_gallery = $this->Model_utama->landingpage_gallery();
+		//$row_function_gallery = $function_gallery->row();
 		//$data['judul_gallery'] = $row_function_gallery->judul;
 		//$data['gambar_gallery'] = $row_function_gallery->gambar;
 
@@ -27,7 +29,7 @@ class Utama extends CI_Controller
 		$this->load->view(template() . '/_slider_test');
 		$this->load->view(template() . '/_landingpage', $data);
 		$this->load->view(template() . '/_footer');
-		// var_dump($data);
+		// var_dump($function_gallery);
 	}
 
 	public function about()

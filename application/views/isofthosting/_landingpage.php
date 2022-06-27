@@ -42,7 +42,7 @@
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="img-border">
-                    <img class="img-fluid" src="<?php echo base_url(); ?>asset/foto_statis/<?php echo $gambar ?>" alt="">
+                    <img class="img-fluid" src="<?php echo base_url(); ?>asset/foto_statis/<?php echo $gambar_about ?>" alt="">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">

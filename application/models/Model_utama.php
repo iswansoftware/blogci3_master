@@ -285,6 +285,9 @@ class Model_utama extends CI_model
 
     function landingpage_gallery($start, $limit)
     {
-        return $this->db->query("SELECT * FROM gallery ORDER BY id_gallery DESC LIMIT $start, $limit");
+        function galleryslider($start, $limit)
+        {
+            return $this->db->query("SELECT * FROM gallery ORDER BY id_gallery DESC LIMIT $start, $limit");
+        }
     }
 }
