@@ -5,11 +5,21 @@ class Utama extends CI_Controller
 	public function index()
 	{
 		$this->load->model('Model_utama');
-		$dat = $this->Model_utama->landingpage_about();
-		$row = $dat->row();
-		$data['judul'] = $row->judul;
-		$data['isi_halaman'] = $row->isi_halaman;
-		$data['gambar'] = $row->gambar;
+
+		//data about
+		$function_about = $this->Model_utama->landingpage_about();
+		$row_function_about = $function_about->row();
+		$data['judul_about'] = $row_function_about->judul;
+		$data['isi_halaman_about'] = $row_function_about->isi_halaman;
+		$data['gambar_about'] = $row_function_about->gambar;
+
+		//data gallery
+		$function_gallery = $this->Model_utama->landingpage_gallery();
+		$row_function_gallery = $function_gallery->row();
+		//$data['judul_gallery'] = $row_function_gallery->judul;
+		//$data['gambar_gallery'] = $row_function_gallery->gambar;
+
+
 
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');

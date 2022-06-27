@@ -47,9 +47,9 @@
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="h-100">
-                    <h6 class="section-title bg-white text-start text-primary pe-3 " maxlength="10"><?php echo $judul ?></h6>
+                    <h6 class="section-title bg-white text-start text-primary pe-3 " maxlength="10"><?php echo $judul_about ?></h6>
                     <!-- <h1 class="display-6 mb-4">#1 Digital Solution With <span class="text-primary">10 Years</span> Of Experience</h1> -->
-                    <?php echo $isi_halaman ?>
+                    <?php echo $isi_halaman_about ?>
                     <div class="d-flex align-items-center mb-4 pb-2">
                         <!-- <img class="flex-shrink-0 rounded-circle" src="img/team-1.jpg" alt="" style="width: 50px; height: 50px;"> -->
                         <div class="ps-4">

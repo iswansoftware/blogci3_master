@@ -282,4 +282,9 @@ class Model_utama extends CI_model
         //return $this->db->get_where($this->halamanstatis, ["id_halaman" => 1])->row(1);
         //query diatas seperti halnya 
     }
+
+    function landingpage_gallery($start, $limit)
+    {
+        return $this->db->query("SELECT * FROM gallery ORDER BY id_gallery DESC LIMIT $start, $limit");
+    }
 }
