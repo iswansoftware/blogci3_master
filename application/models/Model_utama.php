@@ -276,6 +276,12 @@ class Model_utama extends CI_model
         return $this->db->query("SELECT * FROM gallery ORDER BY id_gallery DESC LIMIT $start, $limit");
     }
 
+    function gambar_footer($start, $limit)
+    {
+        return $this->db->query("SELECT * FROM gallery ORDER BY id_gallery DESC LIMIT $start, $limit");
+    }
+
+
     function landingpage_about()
     {
         return $this->db->query("SELECT * FROM halamanstatis where id_halaman=1 "); // id_halaman 1 untuk about
