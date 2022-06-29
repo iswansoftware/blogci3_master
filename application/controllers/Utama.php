@@ -7,7 +7,7 @@ class Utama extends CI_Controller
 		$this->load->model('Model_utama');
 		$function_about = $this->Model_utama->landingpage_about()->row();
 		$function_gallery = $this->Model_utama->landingpage_gallery(1, 6);
-		//$function_slider = $this->Model_utama->landingpage_slider(1, 10);
+		//$function_slider = $this->Model_utama->gambar_slider(1, 10);
 
 
 		//data funcstion about

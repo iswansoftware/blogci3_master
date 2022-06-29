@@ -271,22 +271,18 @@ class Model_utama extends CI_model
     }
 
     //TABAHAN GALERY SLIDER
-    function galleryslider($start, $limit)
+    function gambar_slider($start, $limit)
     {
         return $this->db->query("SELECT * FROM gallery ORDER BY id_gallery DESC LIMIT $start, $limit");
     }
 
     function landingpage_about()
     {
-        return $this->db->query("SELECT * FROM halamanstatis where id_halaman=1 ");
-        //return $this->db->get_where($this->halamanstatis, ["id_halaman" => 1])->row(1);
-        //query diatas seperti halnya 
+        return $this->db->query("SELECT * FROM halamanstatis where id_halaman=1 "); // id_halaman 1 untuk about
     }
 
     function landingpage_gallery($start, $limit)
     {
         return $this->db->query("SELECT * FROM gallery ORDER BY id_gallery DESC LIMIT $start, $limit");
-        //return $this->db->query("SELECT * FROM halamanstatis where id_halaman=1 ");
-        //return $this->db->query("SELECT SUM(rating) as jml_vote FROM poling WHERE aktif='Y'");
     }
 }

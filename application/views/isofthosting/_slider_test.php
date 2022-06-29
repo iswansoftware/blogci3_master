@@ -1,18 +1,14 @@
-<?php $headline = $this->model_utama->galleryslider(0, 10);
+<?php $gambar_slider = $this->model_utama->gambar_slider(0, 10);
 $no = 0;
 $noslide = 1;
 $active = ' active';
-
-
-
-//$headline->result_array() as $row;
 ?>
 
 <!-- Carousel Start -->
 <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <?php foreach ($headline->result_array() as $row) : ?>
+            <?php foreach ($gambar_slider->result_array() as $row) : ?>
                 <?php if ($no == 0) {
                     $classactive = 'class="active"';
                     // $active = ' active';
@@ -29,7 +25,7 @@ $active = ' active';
             <?php endforeach; ?>
         </div>
         <div class="carousel-inner">
-            <?php foreach ($headline->result_array() as $row) : ?>
+            <?php foreach ($gambar_slider->result_array() as $row) : ?>
                 <div class="carousel-item<?php echo $active ?>">
                     <img class="w-100" src="<?php echo base_url() ?>asset/img_galeri/<?php echo $row['gbr_gallery'] ?>" alt="Image">
                     <div class="carousel-caption">
