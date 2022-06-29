@@ -5,31 +5,24 @@ class Utama extends CI_Controller
 	public function index()
 	{
 		$this->load->model('Model_utama');
+		$function_about = $this->Model_utama->landingpage_about()->row();
+		$function_gallery = $this->Model_utama->landingpage_gallery(1, 6);
 
-		//data about
-		$function_about = $this->Model_utama->landingpage_about();
-		$row_function_about = $function_about->row();
-		$data['judul_about'] = $row_function_about->judul;
-		$data['isi_halaman_about'] = $row_function_about->isi_halaman;
-		$data['gambar_about'] = $row_function_about->gambar;
+		//data funcstion about
+		$data['judul_about'] = $function_about->judul;
+		$data['isi_halaman_about'] = $function_about->isi_halaman;
+		$data['gambar_about'] = $function_about->gambar;
 
-		$data['function_gallery'] = $this->Model_utama->landingpage_gallery();
+		//data function galery untuk forech	
+		$data['data_gallery'] = $function_gallery->result_array();
 
-		//data gallery
-		//$function_gallery = $this->Model_utama->landingpage_gallery();
-		//$row_function_gallery = $function_gallery->row();
-		//$data['judul_gallery'] = $row_function_gallery->judul;
-		//$data['gambar_gallery'] = $row_function_gallery->gambar;
-
-
-
+		//load view
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
-		//$this->load->view(template() . '/_slider');
 		$this->load->view(template() . '/_slider_test');
 		$this->load->view(template() . '/_landingpage', $data);
 		$this->load->view(template() . '/_footer');
-		// var_dump($function_gallery);
+		//var_dump($data);
 	}
 
 	public function about()

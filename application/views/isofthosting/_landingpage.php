@@ -65,7 +65,6 @@
 </div>
 <!-- About End -->
 
-
 <!-- Service Start -->
 <div class="container-xxl py-5">
     <div class="container">
@@ -74,42 +73,17 @@
             <h1 class="display-6 mb-4">We Focuse On Making The Best In All Sectors</h1>
         </div>
         <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                    <img class="img-fluid rounded mb-4" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/new/img/service-1.jpg" alt="">
-                    <h4 class="mb-0">Web Design</h4>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                    <img class="img-fluid rounded mb-4" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/new/img/service-2.jpg" alt="">
-                    <h4 class="mb-0">App Development</h4>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                    <img class="img-fluid rounded mb-4" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/new/img/service-3.jpg" alt="">
-                    <h4 class="mb-0">SEO Optimization</h4>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                    <img class="img-fluid rounded mb-4" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/new/img/service-4.jpg" alt="">
-                    <h4 class="mb-0">Social Marketing</h4>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                    <img class="img-fluid rounded mb-4" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/new/img/service-5.jpg" alt="">
-                    <h4 class="mb-0">Email Marketing</h4>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <a class="service-item d-block rounded text-center h-100 p-4" href="">
-                    <img class="img-fluid rounded mb-4" src="<?php echo base_url(); ?>template/<?php echo template(); ?>/new/img/service-6.jpg" alt="">
-                    <h4 class="mb-0">PPC Advertising</h4>
-                </a>
-            </div>
+            <?php $s = 1 ?>
+            <?php foreach ($data_gallery as $row) : ?>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.<?php echo $s ?>s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img max-height="20" class="img-fluid rounded mb-4" src="<?php echo base_url(); ?>/asset/img_galeri/<?php echo $row['gbr_gallery']; ?>" alt="">
+                        <h4 class="mb-0"><?php echo $row['jdl_gallery']; ?></h4>
+                    </a>
+
+                </div>
+                <?php $s++ ?>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
