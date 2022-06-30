@@ -57,7 +57,7 @@
                             <small>SEO & Founder</small>
                         </div>
                     </div>
-                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="<?php echo base_url(); ?>index.php/about">Read More</a>
                 </div>
             </div>
         </div>
@@ -347,54 +347,24 @@
             <h1 class="display-6 mb-4">We Are A Creative Team For Your Dream Project</h1>
         </div>
         <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item text-center p-4">
-                    <img class="img-fluid border rounded-circle w-75 p-2 mb-4" src="img/team-1.jpg" alt="">
-                    <div class="team-text">
-                        <div class="team-title">
-                            <h5>Full Name</h5>
-                            <span>Designation</span>
-                        </div>
-                        <div class="team-social">
-                            <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item text-center p-4">
-                    <img class="img-fluid border rounded-circle w-75 p-2 mb-4" src="img/team-2.jpg" alt="">
-                    <div class="team-text">
-                        <div class="team-title">
-                            <h5>Full Name</h5>
-                            <span>Designation</span>
-                        </div>
-                        <div class="team-social">
-                            <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+            <?php foreach ($data_ourteam as $row) : ?>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center p-4">
+                        <img class="img-fluid border rounded-circle w-75 p-2 mb-4" src="<?php echo base_url(); ?>/asset/img_galeri/<?php echo $row['gbr_gallery']; ?>" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5><?php echo $row['jdl_gallery']; ?></h5>
+                                <span><?php echo $row['keterangan']; ?></span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item text-center p-4">
-                    <img class="img-fluid border rounded-circle w-75 p-2 mb-4" src="img/team-3.jpg" alt="">
-                    <div class="team-text">
-                        <div class="team-title">
-                            <h5>Full Name</h5>
-                            <span>Designation</span>
-                        </div>
-                        <div class="team-social">
-                            <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
@@ -408,47 +378,20 @@
             <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
             <h1 class="display-6 mb-4">What Our Clients Say!</h1>
         </div>
+
         <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-            <div class="testimonial-item bg-light rounded p-4">
-                <div class="d-flex align-items-center mb-4">
-                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-1.jpg" alt="">
-                    <div class="ms-4">
-                        <h5 class="mb-1">Client Name</h5>
-                        <span>Profession</span>
+            <?php foreach ($data_testimonial as $row) : ?>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="<?php echo base_url(); ?>/asset/img_galeri/<?php echo $row['gbr_gallery']; ?>" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
                     </div>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                 </div>
-                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-            </div>
-            <div class="testimonial-item bg-light rounded p-4">
-                <div class="d-flex align-items-center mb-4">
-                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-2.jpg" alt="">
-                    <div class="ms-4">
-                        <h5 class="mb-1">Client Name</h5>
-                        <span>Profession</span>
-                    </div>
-                </div>
-                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-            </div>
-            <div class="testimonial-item bg-light rounded p-4">
-                <div class="d-flex align-items-center mb-4">
-                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-3.jpg" alt="">
-                    <div class="ms-4">
-                        <h5 class="mb-1">Client Name</h5>
-                        <span>Profession</span>
-                    </div>
-                </div>
-                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-            </div>
-            <div class="testimonial-item bg-light rounded p-4">
-                <div class="d-flex align-items-center mb-4">
-                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-4.jpg" alt="">
-                    <div class="ms-4">
-                        <h5 class="mb-1">Client Name</h5>
-                        <span>Profession</span>
-                    </div>
-                </div>
-                <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-            </div>
+                <?php endforeach ?>)
         </div>
     </div>
 </div>

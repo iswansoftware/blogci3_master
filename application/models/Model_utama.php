@@ -296,4 +296,16 @@ class Model_utama extends CI_model
     {
         return $this->db->query("SELECT * FROM berita  ORDER BY tanggal and jam DESC LIMIT $start, $limit");
     }
+
+
+
+    function landingpage_ourteam($start, $limit) // modul out team
+    {
+        return $this->db->query("SELECT * FROM gallery ORDER BY id_gallery DESC LIMIT $start, $limit");
+    }
+
+    function landingpage_testimonial($start, $limit) // modul out testimonial
+    {
+        return $this->db->query("SELECT * FROM gallery ORDER BY id_gallery DESC LIMIT $start, $limit");
+    }
 }

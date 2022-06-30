@@ -8,7 +8,8 @@ class Utama extends CI_Controller
 		$function_about = $this->Model_utama->landingpage_about()->row();
 		$function_gallery = $this->Model_utama->landingpage_gallery(1, 6);
 		$function_artikel = $this->Model_utama->landingpage_artikel(1, 10);
-
+		$function_ourteam = $this->Model_utama->landingpage_ourteam(1, 3);
+		$function_testimonial = $this->Model_utama->landingpage_testimonial(1, 3);
 
 		//data funcstion about
 		$data['judul_about'] = $function_about->judul;
@@ -18,6 +19,8 @@ class Utama extends CI_Controller
 		//data function galery untuk foreach
 		$data['data_artikel'] = $function_artikel->result_array();
 		$data['data_gallery'] = $function_gallery->result_array();
+		$data['data_ourteam'] = $function_ourteam->result_array();
+		$data['data_testimonial'] = $function_testimonial->result_array();
 
 		//load view
 		$this->load->view(template() . '/_header');
@@ -32,7 +35,7 @@ class Utama extends CI_Controller
 	{
 		$this->load->view(template() . '/_header');
 		$this->load->view(template() . '/_navbar');
-		$this->load->view(template() . '/_slider');
+		//$this->load->view(template() . '/_slider');
 		$this->load->view(template() . '/_about');
 		$this->load->view(template() . '/_footer');
 	}
