@@ -7,7 +7,7 @@ class Utama extends CI_Controller
 		$this->load->model('Model_utama');
 		$function_about = $this->Model_utama->landingpage_about()->row();
 		$function_gallery = $this->Model_utama->landingpage_gallery(1, 6);
-		//$function_slider = $this->Model_utama->gambar_slider(1, 10);
+		$function_artikel = $this->Model_utama->landingpage_artikel(1, 10);
 
 
 		//data funcstion about
@@ -16,7 +16,7 @@ class Utama extends CI_Controller
 		$data['gambar_about'] = $function_about->gambar;
 
 		//data function galery untuk foreach
-		//$data['data_slider'] = $function_slider->result_array();
+		$data['data_artikel'] = $function_artikel->result_array();
 		$data['data_gallery'] = $function_gallery->result_array();
 
 		//load view

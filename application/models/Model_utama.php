@@ -291,4 +291,9 @@ class Model_utama extends CI_model
     {
         return $this->db->query("SELECT * FROM gallery ORDER BY id_gallery DESC LIMIT $start, $limit");
     }
+
+    function landingpage_artikel($start, $limit) // modul artikel ambil dari berita
+    {
+        return $this->db->query("SELECT * FROM berita  ORDER BY tanggal and jam DESC LIMIT $start, $limit");
+    }
 }
